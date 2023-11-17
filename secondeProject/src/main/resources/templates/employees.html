@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>age</th>
+                <th>sex</th>
+            </tr>
+            <tr th:each="userInfo:${employees}">
+                <td th:text="${userInfo.id}">10</td>
+                <td th:text="${userInfo.name}">mohanned</td>
+                <td th:text="${userInfo.age}">17</td>
+                <td th:text="${userInfo.sex}">homme</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

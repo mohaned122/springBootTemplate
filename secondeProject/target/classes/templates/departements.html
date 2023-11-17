@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>departement Id</th>
+                <th>name Department</th>
+                <th>branche departement</th>
+                <th>departement position</th>
+            </tr>
+            <tr th:each="dept:${departements}">
+                <td th:text="${dept.departementId}">10</td>
+                <td th:text="${dept.nameDepartment}">mohanned</td>
+                <td th:text="${dept.branche}">17</td>
+                <td th:text="${dept.Position}">homme</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
